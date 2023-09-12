@@ -75,7 +75,7 @@ class TrendingVideos extends Component {
     </LoaderContainer>
   )
 
-  renderVideosView = () => {
+  renderTrendingVideosView = () => {
     const {trendingVideos} = this.state
 
     return (
@@ -97,7 +97,7 @@ class TrendingVideos extends Component {
     const {apiStatus} = this.state
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderVideosView()
+        return this.renderTrendingVideosView()
       case apiStatusConstants.failure:
         return this.renderFailureView()
       case apiStatusConstants.inProgress:

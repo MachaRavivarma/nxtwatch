@@ -33,7 +33,7 @@ const VideoCard = props => {
         const textColor = isDarkTheme ? '#f9f9f9' : '#231f20'
 
         return (
-          <ItemLink to={`/videos/${id}`} className="Link">
+          <ItemLink to={`/videos/${id}`} className="link">
             <TrendingListItem>
               <TrendingThumbNailImage
                 src={thumbnailUrl}
@@ -50,7 +50,7 @@ const VideoCard = props => {
                     {name}
                   </TrendingChannelName>
                   <TrendingViewsAndDate color={textColor}>
-                    {viewCount} views<TrendingDot> &#8226; </TrendingDot>{' '}
+                    {viewCount} views<TrendingDot> &#8226; </TrendingDot>
                     {publishedAt}
                   </TrendingViewsAndDate>
                 </TrendingContentSection>

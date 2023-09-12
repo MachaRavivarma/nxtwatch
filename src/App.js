@@ -7,8 +7,9 @@ import TrendingVideos from './components/TrendingVideos'
 import GamingVideos from './components/GamingVideos'
 import SavedVideos from './components/SavedVideos'
 import NotFound from './components/NotFound'
-import ThemeAndVideoContext from './context/ThemeAndVideoContext'
 import LoginForm from './components/LoginForm'
+
+import ThemeAndVideoContext from './context/ThemeAndVideoContext'
 
 import './App.css'
 
@@ -24,7 +25,7 @@ class App extends Component {
   }
 
   toggleTheme = () => {
-    this.setState(prevState => ({isDarkTheme: !prevState.isDarkThene}))
+    this.setState(prevState => ({isDarkTheme: !prevState.isDarkTheme}))
   }
 
   addVideo = video => {

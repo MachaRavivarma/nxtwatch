@@ -35,7 +35,7 @@ const HomeVideoCard = props => {
         const textColor = isDarkTheme ? '#f9f9f9' : '#231f20'
 
         return (
-          <Link to={`/videos/${id}`} className="Link">
+          <Link to={`/videos/${id}`} className="link">
             <ListItem>
               <ThumbNailImage src={thumbnailUrl} alt="video thumbnail" />
               <VideoDetails>

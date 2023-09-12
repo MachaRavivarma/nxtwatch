@@ -72,7 +72,7 @@ class GamingVideos extends Component {
     </LoaderContainer>
   )
 
-  renderVideosView = () => {
+  renderGamingVideosView = () => {
     const {gamingVideos} = this.state
 
     return (
@@ -90,11 +90,11 @@ class GamingVideos extends Component {
 
   renderFailureView = () => <FailureView onRetry={this.onRetry} />
 
-  renderTrendingVideos = () => {
+  renderGamingVideos = () => {
     const {apiStatus} = this.state
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderVideosView()
+        return this.renderGamingVideosView()
       case apiStatusConstants.failure:
         return this.renderFailureView()
       case apiStatusConstants.inProgress:
@@ -113,7 +113,7 @@ class GamingVideos extends Component {
           const textColor = isDarkTheme ? '#f9f9f9' : '#231f20'
 
           return (
-            <div>
+            <div data-testid="gaming">
               <Header />
               <NavigationBar />
               <GamingContainer data-testid="gaming" bgColor={bgColor}>
@@ -123,7 +123,7 @@ class GamingVideos extends Component {
                   </GamingTitleIconContainer>
                   <GamingText color={textColor}>Gaming</GamingText>
                 </GamingVideoTitle>
-                {this.renderTrendingVideos()}
+                {this.renderGamingVideos()}
               </GamingContainer>
             </div>
           )

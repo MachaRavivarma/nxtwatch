@@ -99,7 +99,7 @@ class Home extends Component {
     </LoaderContainer>
   )
 
-  renderVideosView = () => {
+  renderHomeVideosView = () => {
     const {homeVideos} = this.state
     return <HomeVideos homeVideos={homeVideos} onRetry={this.onRetry} />
   }
@@ -111,7 +111,7 @@ class Home extends Component {
 
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderVideosView()
+        return this.renderHomeVideosView()
       case apiStatusConstants.failure:
         return this.renderFailureView()
       case apiStatusConstants.inProgress:
