@@ -53,7 +53,7 @@ const SavedVideos = () => (
                   No saved videos found
                 </NoSavedVideosHeading>
                 <NoSavedVideosNote noteColor={noteColor}>
-                  You can save your videos while watching then
+                  Save your videos by clicking a button
                 </NoSavedVideosNote>
               </NoSavedVideosView>
             )}

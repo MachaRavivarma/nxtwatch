@@ -39,7 +39,7 @@ class VideoDetailView extends Component {
     description: data.video_details.description,
     name: data.video_details.channel.name,
     profileImageUrl: data.video_details.channel.profile_image_url,
-    subscriberChunt: data.video_details.channel.subscriber_count,
+    subscriberCount: data.video_details.channel.subscriber_count,
   })
 
   getVideoDetails = async () => {
