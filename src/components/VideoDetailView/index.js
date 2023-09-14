@@ -12,7 +12,7 @@ import {VideoDetailViewContainer, LoaderContainer} from './styledComponents'
 
 const apiStatusConstants = {
   initial: 'INITIAL',
-  Success: 'SUCCESS',
+  success: 'SUCCESS',
   failure: 'FAILURE',
   inProgress: 'IN_PROGRESS',
 }

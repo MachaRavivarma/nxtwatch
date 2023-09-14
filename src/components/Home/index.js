@@ -27,7 +27,7 @@ import {
 
 const apiStatusConstants = {
   initial: 'INITIAL',
-  Success: 'SUCCESS',
+  success: 'SUCCESS',
   failure: 'FAILURE',
   inProgress: 'IN PROGRESS',
 }

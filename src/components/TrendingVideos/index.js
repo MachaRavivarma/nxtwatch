@@ -21,7 +21,7 @@ import {
 
 const apiStatusConstants = {
   initial: 'INITIAL',
-  Success: 'SUCCESS',
+  success: 'SUCCESS',
   failure: 'FAILURE',
   inProgress: 'IN_PROGRESS',
 }
@@ -121,7 +121,7 @@ class TrendingVideos extends Component {
               <NavigationBar />
               <TrendingContainer
                 data-testid="trending"
-                style={{backgroundColor: bgColor}}
+                bgColor={bgColor}
                 onClick={toggleTheme}
               >
                 <TrendingVideoTitle>
