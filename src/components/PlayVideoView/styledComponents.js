@@ -39,7 +39,6 @@ export const SocialButton = styled.button`
   align-items: center;
   margin-right: 10px;
   color: #2563eb;
-  color: ${props => props.color};
 `
 export const ButtonText = styled.span`
   margin-left: 5px;

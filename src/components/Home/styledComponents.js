@@ -13,7 +13,7 @@ export const HomeContainer = styled.div`
 `
 
 export const BannerContainer = styled.div`
-  background-image: url('https://assets.ccbp.in/frontend/react-is/nxt-watch-banner-bg.png');
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png ');
   width: 100%;
   background-size: cover;
   -height: 200px;
